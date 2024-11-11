@@ -22,9 +22,9 @@ function App() {
   return (
     <div className="max-w-md mx-auto p-4">
     <nav className="flex justify-between mb-4">
-      <User/>
-      <Heart/>
-      <MessageCircle/>
+      <User onClick={()=> console.log("profile")}/>
+      
+      <MessageCircle onClick={()=> console.log("matches")} />
     </nav>
     <ProfileSelector/>
   </div>
